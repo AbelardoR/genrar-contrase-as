@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generador de contraseñas</title>
+    <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://peru21.pe/resizer/5-eaALah46EZJ0D6hw8QfCp2SXM=/940x569/smart/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/CJBHVB5HRFCPHDLA7RFT6USHXA.jpg" 
+            alt="" >
+        </div>
+        <form action="" class="app" id="app">
+            <div class="fila cant">
+                <div class="col">
+                    <label for="num">Cantidad de caracteres</label>
+                </div>
+                <div class="col btn2">
+                    <div><button class="btn" id="btn-min"><i class="fas fa-minus"></i></button></div>
+                    <div><input type="text" id="num" readonly value="10"></div>
+                    <div><button class="btn" id="btn-mas"><i class="fas fa-plus"></i></button></div>
+                </div>
+                
+            </div>
+            <div class="fila simb">
+               <div class="col">
+                   <label for="sim">Contener simbolos?</label>
+               </div> 
+               <div class="col">
+                   <div><button class="btn" id="btn-sim"><i class="fas fa-check"></i></button></div>
+                   
+               </div>
+            </div>
+            <div class="fila dig">
+                <div class="col">
+                    <label for="dig">Contener digitos?</label>
+                </div> 
+                <div class="col">
+                <div><button class="btn" id="btn-dig"><i class="fas fa-check"></i></button></div>    
+                </div>
+            </div>
+            <div class="fila mayus">
+                    <div class="col">
+                        <label for="mayus">Contener mayúsculas?</label>
+                    </div> 
+                    <div class="col">
+                    <div><button class="btn" id="btn-mayus"><i class="fas fa-check"></i></button></div>    
+                    </div>
+            </div>
+            <div class="fila gene">
+                <div class="col">
+                    <button class="btn1 btn-g" id="btn-gene">Generador <i class="fas fa-fingerprint"></i></button>
+                </div>
+                <div class="col">
+                    <input type="text" class="input-pass" id="input-pass" readonly value="XXXXXXXXX">
+                </div>
+            </div>
+            <div class="fila alerta">
+                <div class="col">
+                    <div class="alerta-copiado" id="alerta-copiado">
+                        <p>Texto Copiado <i class="far fa-copy"></i></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

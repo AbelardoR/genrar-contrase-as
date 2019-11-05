@@ -1,0 +1,181 @@
+/* estilos generales */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Jomolhari', serif;
+    font-size: 20px;
+}
+*::selection{
+    background: darkslategrey;
+    color: whitesmoke   ;
+}
+*::-moz-selection{
+    background: darkslategrey;
+    color: whitesmoke   ;
+}
+
+body{
+    background-image: url(../img/2927262.jpg);
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size:cover; 
+}
+.container{
+    max-width: 500px;
+    width: 90%;
+    margin: 40px auto;
+}
+/* logo */
+.logo {
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.logo img{
+    width: 70%;
+    vertical-align: top;
+}
+/* fillas y columnas */
+.app .fila{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.app .col{
+    width: 50%;
+}
+/* inputs and buttons */
+.app label{
+    line-height: 40px;
+    color: white;
+}
+.app input{
+    text-align: center;
+    border: none;
+    width: 100%;
+   
+}
+.app .btn{
+    width: 100%;
+    background: #14868c;
+    color: white;
+   
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius:4px ;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.app .btn1{
+    width: 100%;
+    background: #14868c;
+    color: white;
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius:4px ;
+    cursor: pointer;
+    transition: all .3s ease;
+    
+}
+.app .btn:hover{
+    background: #94ceca;
+}
+.app .btn1:hover{
+    background: #94ceca;
+}
+.app .btn.false{
+    background: #cea251;
+}
+
+/* fila cant */
+.app .cant .btn2 div{
+    width: 100%;
+}
+.app .cant input{
+    height: 40px;
+    width: 100%;
+    cursor: default;
+}
+.app .cant .btn2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+/* fila generar contraseña */
+.app .fila.gene .btn1.btn-g{
+    height: 40px;
+    width: 90%;
+}
+.app .fila.gene .input-pass{
+    height: 40px;
+    width: 100%;
+    background: none;
+    border-radius: 4px;
+    border: 1px seagreen;
+    color: white;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all .3s ease;
+    
+}
+.app .fila.gene .input-pass:hover{
+    border: 1px springgreen;
+}
+/* alerta */
+.app .fila.alerta{
+    justify-content: flex-end;
+    
+}
+.app .fila .col{
+    width: 65%;
+}
+.app .fila.alerta .alerta-copiado{
+    text-align: center;
+    color:lightslategray;
+    opacity: 0;
+    transition:all .3s ease;
+}
+.app .fila.alerta .alerta-copiado.active{
+    color:lightslategray;
+    opacity: 1;
+}
+.app .fila.alerta .alerta-copiado p{
+    font-size: 12px;
+}
+
+/* media queries */
+@media screen and (max-width:500px){
+    .logo img{
+        width:50%;
+        
+    }
+    .app .fila{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .app .fila .col{
+        width: 100%;
+        margin-bottom: 0px;  
+    }
+    .app .btn1{
+        margin-top: 20px;
+        margin-bottom:20px;
+    }
+    .app .fila.gene{
+        border-top: 2px solid whitesmoke;
+    }
+    .app .fila.gene .btn1.btn-g{
+        width: 100%;
+    }
+}

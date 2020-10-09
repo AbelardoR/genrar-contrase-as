@@ -35,7 +35,7 @@ app.elements.namedItem('btn-min').addEventListener('click',function(){
     }
 })
 app.elements.namedItem('btn-mas').addEventListener('click',function(){
-    if (configuracion.caracteres < 10) {
+    if (configuracion.caracteres < 20) {
         configuracion.caracteres++,
     inputCaracteres.value = configuracion.caracteres
     //console.log(configuracion.caracteres);
